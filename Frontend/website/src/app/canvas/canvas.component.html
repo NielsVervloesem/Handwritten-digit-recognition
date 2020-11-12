@@ -1,0 +1,14 @@
+<canvas #canvas></canvas><br>
+<button (click)="onClear()">Clear Canvas</button>
+<button (click)="onPredict()">Predict!</button><br>
+
+<div class="chart-wrapper">
+    <canvas baseChart height="1" width="2"
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [plugins]="barChartPlugins"
+    [legend]="barChartLegend"
+    [chartType]="barChartType">
+  </canvas>
+</div>
